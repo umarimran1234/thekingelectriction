@@ -1,0 +1,59 @@
+<!-- {"title": "Contact Us | Free Estimate | The King's Electric", "description": "Contact The King's Electric in Arlington, TX for a free estimate. Call (817) 308-6444 or send a request online. Serving homes and businesses across DFW.", "nav": "contact", "cta": false} -->
+<section class="page-hero">
+  <div class="container page-hero__inner">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Contact</span></nav>
+    <p class="eyebrow eyebrow--light">Contact us</p>
+    <h1>Let's talk about your project.</h1>
+    <p class="lead">Call us during business hours or send a request anytime. We'll get back to you quickly with next steps and honest pricing.</p>
+  </div>
+</section>
+
+<section class="section section--overlap" aria-label="Contact options">
+  <div class="container contact">
+    <aside class="contact__info">
+      <a class="info-card info-card--gold" href="{{site.phoneHref}}">
+        <span class="info-card__icon"><svg class="i"><use href="assets/img/icons.svg#phone"/></svg></span>
+        <div><small>Call us</small><strong>{{site.phone}}</strong></div>
+      </a>
+      <a class="info-card" href="{{site.mapsUrl}}" target="_blank" rel="noopener">
+        <span class="info-card__icon"><svg class="i"><use href="assets/img/icons.svg#pin"/></svg></span>
+        <div><small>Visit us</small><strong>{{site.street}}</strong><span>{{site.city}}, {{site.region}} {{site.zip}}</span></div>
+      </a>
+      <div class="info-card">
+        <span class="info-card__icon"><svg class="i"><use href="assets/img/icons.svg#clock"/></svg></span>
+        <div><small>Office hours</small><strong>Monday – Friday</strong><span>7:30 AM – 4:30 PM</span></div>
+      </div>
+      <a class="info-card" href="{{site.facebook}}" target="_blank" rel="noopener">
+        <span class="info-card__icon"><svg class="i"><use href="assets/img/icons.svg#facebook"/></svg></span>
+        <div><small>Follow us</small><strong>Facebook</strong><span>@thekingselectric</span></div>
+      </a>
+    </aside>
+
+    <form class="form card" data-form="contact" novalidate>
+      <h2 class="form__title">Request a free estimate</h2>
+      <fieldset class="segmented">
+        <legend>Type of service *</legend>
+        <label><input type="radio" name="type" value="residential" checked><span><svg class="i"><use href="assets/img/icons.svg#home"/></svg>Residential</span></label>
+        <label><input type="radio" name="type" value="commercial"><span><svg class="i"><use href="assets/img/icons.svg#building"/></svg>Commercial</span></label>
+      </fieldset>
+      <div class="form__row">
+        <label class="field"><span>Full name *</span><input name="name" autocomplete="name" required></label>
+        <label class="field"><span>Phone *</span><input name="phone" type="tel" autocomplete="tel" required></label>
+      </div>
+      <div class="form__row">
+        <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email"></label>
+        <label class="field"><span>ZIP code</span><input name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="10"></label>
+      </div>
+      <label class="field"><span>How can we help? *</span><textarea name="message" rows="5" required placeholder="Describe the problem or project — e.g. breaker keeps tripping, new lighting for a store, remodel wiring…"></textarea></label>
+      <button class="btn btn--gold btn--lg btn--block" type="submit">Send request <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#arrow"/></svg></button>
+      <p class="form__note">For anything urgent, please call <a href="{{site.phoneHref}}">{{site.phone}}</a>.</p>
+      <p class="form__status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<section class="section section--flush" aria-label="Map">
+  <div class="map-wide">
+    <iframe title="Map to The King's Electric" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1288%20W%20Arkansas%20Ln%2C%20Arlington%2C%20TX%2076013&z=13&output=embed"></iframe>
+  </div>
+</section>

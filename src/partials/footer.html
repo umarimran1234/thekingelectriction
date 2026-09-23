@@ -1,0 +1,50 @@
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="brand brand--light" href="index.html">
+        <img src="assets/img/logo.svg" alt="" width="44" height="44">
+        <span class="brand__text"><span class="brand__the">The</span> King's Electric</span>
+      </a>
+      <p>Locally owned, licensed electrical contractor in Arlington, Texas — powering homes and businesses across the DFW Metroplex with craftsmanship fit for a king.</p>
+      <a class="footer__social" href="{{site.facebook}}" target="_blank" rel="noopener" aria-label="The King's Electric on Facebook">
+        <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#facebook"/></svg> Follow us on Facebook
+      </a>
+    </div>
+    <div>
+      <h3 class="footer__title">Services</h3>
+      <ul class="footer__links">
+        <li><a href="residential.html">Residential</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="residential.html#services">Repairs &amp; troubleshooting</a></li>
+        <li><a href="residential.html#services">Panel upgrades</a></li>
+        <li><a href="commercial.html#services">Lighting &amp; infrastructure</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer__title">Company</h3>
+      <ul class="footer__links">
+        <li><a href="team.html">The Team</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer__title">Get in touch</h3>
+      <ul class="footer__contact">
+        <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#phone"/></svg><a href="{{site.phoneHref}}">{{site.phone}}</a></li>
+        <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#pin"/></svg><a href="{{site.mapsUrl}}" target="_blank" rel="noopener">{{site.street}}<br>{{site.city}}, {{site.region}} {{site.zip}}</a></li>
+        <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#clock"/></svg><span>{{site.hours}}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© {{site.year}} {{site.legalName}} All rights reserved.</p>
+    <p>Licensed &amp; insured · Texas</p>
+  </div>
+</footer>
+
+<a class="call-fab" href="{{site.phoneHref}}" aria-label="Call {{site.name}} at {{site.phone}}">
+  <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#phone"/></svg><span>Call now</span>
+</a>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd54a"/><stop offset="1" stop-color="#f29d0b"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="#0b1530"/>
+  <g transform="translate(90 205) scale(3.5)"><path d="M12 44 9 20l12 10 11-16 11 16 12-10-3 24z" fill="url(#g)"/><rect x="12" y="46.5" width="40" height="5" rx="2.5" fill="url(#g)"/><path d="M34.5 23 26 36h6.5l-2 9L39 32h-6.5z" fill="#0b1530"/></g
+  ><text x="380" y="300" font-family="Arial, sans-serif" font-weight="800" font-size="76" fill="#fff">The King's Electric</text>
+  <text x="380" y="370" font-family="Arial, sans-serif" font-size="36" fill="#c7d2f0">Licensed electricians · Arlington &amp; DFW</text>
+  <text x="380" y="430" font-family="Arial, sans-serif" font-weight="700" font-size="36" fill="#ffc53d">(817) 308-6444</text>
+</svg>

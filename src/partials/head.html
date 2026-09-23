@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.title}}</title>
+  <meta name="description" content="{{page.description}}">
+  <meta name="theme-color" content="#0b1530">
+  <link rel="canonical" href="{{site.domain}}/{{page.url}}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{site.name}}">
+  <meta property="og:title" content="{{page.title}}">
+  <meta property="og:description" content="{{page.description}}">
+  <meta property="og:url" content="{{site.domain}}/{{page.url}}">
+  <meta property="og:image" content="{{site.domain}}/assets/img/og.svg">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "{{site.legalName}}",
+    "url": "{{site.domain}}",
+    "telephone": "+1-817-308-6444",
+    "image": "{{site.domain}}/assets/img/logo.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{site.street}}",
+      "addressLocality": "{{site.city}}",
+      "addressRegion": "{{site.region}}",
+      "postalCode": "{{site.zip}}",
+      "addressCountry": "US"
+    },
+    "areaServed": "Dallas–Fort Worth, TX",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:30",
+      "closes": "16:30"
+    }],
+    "sameAs": ["{{site.facebook}}"]
+  }
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body class="page-{{page.slug}}">
+<a class="skip-link" href="#main">Skip to content</a>
