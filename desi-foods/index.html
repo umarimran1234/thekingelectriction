@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desi Foods — Dumba Specialists, FB Area Karachi</title>
+<meta name="description" content="Desi Foods, Abdullah Centre, FB Area Block 16, Karachi. Famous for Dumba Platter, Dumba Derhya Pulao, Karahi, BBQ and family platters. Order on WhatsApp.">
+<meta property="og:title" content="Desi Foods — دیسی فوڈز">
+<meta property="og:description" content="Asli desi zaiqa. Dumba Platter, Dumba Pulao, Karahi & BBQ — FB Area, Karachi.">
+<meta property="og:image" content="images/logo.jpg">
+<meta name="theme-color" content="#7a0a0a">
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500;700&family=Playfair+Display:wght@600;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#7a0a0a; --maroon-d:#4d0505; --maroon-l:#9c1a12;
+  --orange:#f39200; --orange-l:#ffb13b; --cream:#fff7ec; --ink:#2a1a14; --muted:#6f5a50;
+  --card:#ffffff; --line:#f0dfcb; --radius:18px; --shadow:0 12px 32px rgba(77,5,5,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.urdu{font-family:"Noto Nastaliq Urdu",serif;direction:rtl;line-height:2}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.15}
+.eyebrow{display:inline-block;color:var(--orange);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;margin-bottom:.6rem}
+.section{padding:88px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 48px}
+.section-head h2{font-size:clamp(2rem,4vw,2.8rem);color:var(--maroon)}
+.section-head p{color:var(--muted);margin-top:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.5rem;border-radius:999px;font-weight:600;border:2px solid transparent;cursor:pointer;transition:.2s;font-size:.95rem}
+.btn-primary{background:var(--orange);color:#fff;box-shadow:0 8px 20px rgba(243,146,0,.35)}
+.btn-primary:hover{background:var(--orange-l);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--maroon)}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{background:#1ebe5a}
+svg.i{width:1.15em;height:1.15em;fill:currentColor;flex:none}
+
+/* demo strip */
+.demo{background:var(--ink);color:#f5e6d6;text-align:center;font-size:.8rem;padding:.45rem 16px}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(122,10,10,.96);backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(0,0,0,.2)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:.7rem;color:#fff}
+.brand img{width:48px;height:48px;border-radius:12px;object-fit:cover}
+.brand b{font-family:"Playfair Display",serif;font-size:1.3rem;display:block;line-height:1}
+.brand small{font-size:.72rem;color:var(--orange-l);letter-spacing:.08em}
+.links{display:flex;gap:1.6rem;align-items:center}
+.links a{color:#fbe6d0;font-size:.92rem;font-weight:500}
+.links a:hover{color:var(--orange-l)}
+.links .btn{padding:.6rem 1.1rem;color:#fff}
+.burger{display:none;background:none;border:0;color:#fff;cursor:pointer;padding:8px}
+.burger svg{width:28px;height:28px;fill:#fff}
+
+/* hero */
+.hero{position:relative;min-height:88vh;display:grid;place-items:center;color:#fff;overflow:hidden;
+  background:radial-gradient(1200px 600px at 80% 20%,rgba(243,146,0,.25),transparent 60%),linear-gradient(135deg,var(--maroon-d),var(--maroon) 55%,var(--maroon-l))}
+.hero::before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=1800&q=70") center/cover;opacity:.22;mix-blend-mode:luminosity}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:64px 0}
+.hero .urdu{font-size:clamp(2.4rem,6vw,4.2rem);color:var(--orange-l);text-align:left;direction:rtl;display:block}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4.3rem);margin:.2rem 0 1rem}
+.hero h1 span{color:var(--orange-l)}
+.hero p.lead{font-size:1.1rem;color:#fbe6d0;max-width:560px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.hero-badges{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:2.2rem;font-size:.88rem;color:#fbe6d0}
+.hero-badges div{display:flex;align-items:center;gap:.45rem}
+.hero-badges svg{fill:var(--orange-l)}
+.hero-logo{position:relative;justify-self:center;width:min(420px,100%)}
+.hero-logo img{border-radius:28px;box-shadow:0 30px 60px rgba(0,0,0,.45);transform:rotate(-3deg);border:6px solid rgba(255,255,255,.12)}
+.hero-logo .tag{position:absolute;bottom:-18px;right:-10px;background:var(--orange);color:#fff;padding:.7rem 1.1rem;border-radius:14px;font-weight:600;box-shadow:var(--shadow);transform:rotate(3deg)}
+
+/* strip */
+.strip{background:var(--orange);color:#fff;overflow:hidden;white-space:nowrap;padding:.9rem 0;font-weight:600}
+.strip .track{display:inline-block;animation:scroll 32s linear infinite}
+.strip span{margin:0 1.6rem}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-img{position:relative}
+.about-img .ph{aspect-ratio:4/5;border-radius:var(--radius)}
+.about-img .ph2{position:absolute;width:48%;aspect-ratio:1;bottom:-28px;right:-20px;border-radius:var(--radius);border:6px solid var(--cream)}
+.about h2{font-size:clamp(2rem,4vw,2.7rem);color:var(--maroon);margin-bottom:1rem}
+.about p{color:var(--muted);margin-bottom:1rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:1.6rem}
+.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem;text-align:center}
+.stat b{display:block;font-family:"Playfair Display",serif;font-size:1.8rem;color:var(--orange)}
+.stat small{color:var(--muted);font-size:.8rem}
+
+/* photo holder with graceful fallback */
+.ph{background:linear-gradient(135deg,var(--maroon),var(--orange));overflow:hidden;position:relative}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph.fail img{display:none}
+.ph.fail::after{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-family:"Playfair Display",serif;font-size:1.3rem;text-align:center;padding:1rem}
+
+/* specialties */
+.bg-white{background:#fff}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.dish{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column}
+.dish:hover{transform:translateY(-6px)}
+.dish .ph{aspect-ratio:4/3}
+.dish .badge{position:absolute;top:14px;left:14px;background:var(--orange);color:#fff;font-size:.75rem;font-weight:600;padding:.3rem .7rem;border-radius:999px;z-index:1}
+.dish-body{padding:1.3rem 1.4rem 1.5rem;display:flex;flex-direction:column;flex:1}
+.dish-body h3{font-size:1.35rem;color:var(--maroon)}
+.dish-body .ur{font-family:"Noto Nastaliq Urdu",serif;color:var(--orange);font-size:1rem;direction:rtl;text-align:right;margin-top:-1.9rem}
+.dish-body p{color:var(--muted);font-size:.92rem;margin:.6rem 0 1rem;flex:1}
+.dish-foot{display:flex;justify-content:space-between;align-items:center}
+.price{font-weight:600;color:var(--maroon);font-size:1.1rem}
+.price small{color:var(--muted);font-weight:400;font-size:.75rem}
+.add{background:var(--maroon);color:#fff;border:0;border-radius:999px;padding:.5rem 1rem;font-size:.85rem;cursor:pointer;font-family:inherit}
+.add:hover{background:var(--orange)}
+
+/* menu */
+.tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-bottom:2.2rem}
+.tab{border:2px solid var(--maroon);background:transparent;color:var(--maroon);padding:.55rem 1.2rem;border-radius:999px;font-weight:600;cursor:pointer;font-family:inherit;font-size:.9rem}
+.tab.active,.tab:hover{background:var(--maroon);color:#fff}
+.menu-list{display:grid;grid-template-columns:1fr 1fr;gap:6px 48px;max-width:980px;margin:0 auto}
+.mi{display:flex;align-items:baseline;gap:.6rem;padding:1rem 0;border-bottom:1px dashed var(--line)}
+.mi h4{font-size:1.02rem;font-weight:600}
+.mi p{font-size:.84rem;color:var(--muted)}
+.mi .dots{flex:1;border-bottom:2px dotted #e2c9ad;transform:translateY(-4px)}
+.mi .p{font-weight:600;color:var(--maroon);white-space:nowrap}
+.mi .plus{border:0;background:var(--cream);color:var(--maroon);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:1.1rem;flex:none}
+.mi .plus:hover{background:var(--orange);color:#fff}
+.note{text-align:center;color:var(--muted);font-size:.82rem;margin-top:1.6rem}
+
+/* deals */
+.deals{background:linear-gradient(135deg,var(--maroon-d),var(--maroon));color:#fff}
+.deals .section-head h2{color:#fff}
+.deals .section-head p{color:#fbe6d0}
+.deal{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:1.8rem;position:relative;overflow:hidden}
+.deal.hot{background:var(--orange);border-color:var(--orange)}
+.deal h3{font-size:1.5rem;margin-bottom:.3rem}
+.deal .serves{font-size:.85rem;opacity:.85}
+.deal ul{list-style:none;margin:1.2rem 0}
+.deal li{padding:.35rem 0;display:flex;gap:.5rem;align-items:center;font-size:.93rem}
+.deal li::before{content:"✓";color:var(--orange-l);font-weight:700}
+.deal.hot li::before{color:#fff}
+.deal .amt{font-family:"Playfair Display",serif;font-size:2.2rem;font-weight:800}
+.deal .btn{margin-top:1rem;width:100%;justify-content:center}
+.deal.hot .btn{background:#fff;color:var(--maroon)}
+.ribbon{position:absolute;top:18px;right:-34px;background:#fff;color:var(--maroon);font-size:.72rem;font-weight:700;padding:.3rem 2.4rem;transform:rotate(40deg)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+.gallery .ph{border-radius:14px}
+.gallery .ph:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gallery .ph:nth-child(6){grid-column:span 2}
+.gallery img{transition:.4s}
+.gallery .ph:hover img{transform:scale(1.07)}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.why div{background:#fff;border-radius:var(--radius);padding:1.6rem;text-align:center;border:1px solid var(--line)}
+.why svg{width:46px;height:46px;fill:var(--orange);margin:0 auto .8rem}
+.why h3{font-size:1.1rem;color:var(--maroon);margin-bottom:.4rem;font-family:Poppins,sans-serif;font-weight:600}
+.why p{font-size:.88rem;color:var(--muted)}
+
+/* reviews */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.review{background:#fff;border-radius:var(--radius);padding:1.6rem;box-shadow:var(--shadow)}
+.stars{color:var(--orange);letter-spacing:2px;margin-bottom:.6rem}
+.review p{color:var(--muted);font-style:italic;font-size:.95rem}
+.who{display:flex;align-items:center;gap:.7rem;margin-top:1rem}
+.who span{width:42px;height:42px;border-radius:50%;background:var(--maroon);color:#fff;display:grid;place-items:center;font-weight:600}
+.who b{display:block;font-size:.92rem}
+.who small{color:var(--muted);font-size:.78rem}
+.review-cta{text-align:center;margin-top:2.2rem}
+.review-cta .btn{background:var(--maroon);color:#fff}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:36px}
+.info{background:var(--maroon);color:#fff;border-radius:var(--radius);padding:2.2rem}
+.info h3{font-size:1.8rem;margin-bottom:1.4rem}
+.info .row{display:flex;gap:.9rem;margin-bottom:1.3rem}
+.info .row svg{width:22px;height:22px;fill:var(--orange-l);flex:none;margin-top:3px}
+.info .row b{display:block;color:var(--orange-l);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em}
+.info .row a:hover{color:var(--orange-l)}
+.hours{width:100%;font-size:.92rem}
+.hours td{padding:.15rem 0}
+.hours td:last-child{text-align:right}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:420px}
+.map iframe{width:100%;height:100%;min-height:420px;border:0}
+form.book{background:#fff;border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow);margin-top:36px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:end}
+form.book h3{grid-column:1/-1;color:var(--maroon);font-size:1.5rem}
+form.book label{font-size:.8rem;font-weight:600;color:var(--muted);display:flex;flex-direction:column;gap:.3rem}
+form.book input,form.book select{padding:.75rem .9rem;border:1.5px solid var(--line);border-radius:10px;font-family:inherit;font-size:.95rem;background:var(--cream)}
+form.book input:focus,form.book select:focus{outline:2px solid var(--orange);border-color:transparent}
+form.book .btn{justify-content:center}
+
+/* footer */
+footer{background:var(--ink);color:#d9c4b3;padding:56px 0 24px;font-size:.9rem}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+.foot h4{color:#fff;margin-bottom:.8rem;font-size:1rem}
+.foot a{display:block;padding:.2rem 0}
+.foot a:hover{color:var(--orange-l)}
+.social{display:flex;gap:.6rem;margin-top:1rem}
+.social a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);display:grid;place-items:center}
+.social a:hover{background:var(--orange)}
+.social svg{width:18px;height:18px;fill:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.1);margin-top:36px;padding-top:18px;text-align:center;font-size:.8rem}
+
+/* cart */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;border:0;border-radius:999px;padding:.95rem 1.2rem;display:flex;align-items:center;gap:.5rem;font-weight:600;box-shadow:0 10px 26px rgba(0,0,0,.25);cursor:pointer;font-family:inherit}
+.fab .count{background:#fff;color:#128c3e;border-radius:999px;min-width:24px;height:24px;display:grid;place-items:center;font-size:.8rem;padding:0 6px}
+.drawer{position:fixed;inset:0;z-index:70;display:none}
+.drawer.open{display:block}
+.drawer .shade{position:absolute;inset:0;background:rgba(0,0,0,.45)}
+.drawer .panel{position:absolute;right:0;top:0;bottom:0;width:min(400px,100%);background:#fff;padding:1.6rem;display:flex;flex-direction:column}
+.panel h3{color:var(--maroon);font-size:1.5rem;display:flex;justify-content:space-between;align-items:center}
+.panel .x{background:none;border:0;font-size:1.8rem;cursor:pointer;color:var(--muted)}
+.cart-items{flex:1;overflow:auto;margin:1rem 0}
+.ci{display:flex;justify-content:space-between;align-items:center;padding:.8rem 0;border-bottom:1px solid var(--line);gap:.6rem}
+.ci small{color:var(--muted)}
+.qty{display:flex;align-items:center;gap:.4rem}
+.qty button{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);background:var(--cream);cursor:pointer}
+.empty{color:var(--muted);text-align:center;padding:2rem 0}
+.total{display:flex;justify-content:space-between;font-weight:600;font-size:1.1rem;margin-bottom:1rem}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-size:.88rem;opacity:0;transition:.3s;z-index:80;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .links{position:fixed;top:72px;left:0;right:0;background:var(--maroon);flex-direction:column;padding:1.2rem 16px 1.6rem;gap:1rem;transform:translateY(-130%);transition:.3s;box-shadow:0 12px 24px rgba(0,0,0,.25)}
+  .links.open{transform:none}
+  .burger{display:block}
+  .hero-grid,.about,.contact{grid-template-columns:1fr}
+  .hero-logo{width:min(300px,80%);order:-1}
+  .hero .urdu{text-align:center}
+  .hero-grid{text-align:center}
+  .hero p.lead{margin-inline:auto}
+  .hero-cta,.hero-badges{justify-content:center}
+  .grid-3,.reviews{grid-template-columns:1fr 1fr}
+  .why{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
+  .gallery .ph:nth-child(6){grid-column:span 1}
+  form.book{grid-template-columns:1fr 1fr}
+  .foot{grid-template-columns:1fr 1fr}
+  .about-img .ph2{right:0}
+}
+@media (max-width:620px){
+  .section{padding:64px 0}
+  .grid-3,.reviews,.menu-list,.why{grid-template-columns:1fr}
+  form.book{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(3,1fr);gap:8px}
+  .fab .lbl{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.5.6 3.6a1 1 0 0 1-.3 1z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm.5-13H11v6l5.2 3.2.8-1.2-4.5-2.7z"/></symbol>
+  <symbol id="fire" viewBox="0 0 24 24"><path d="M13.5.7s.7 2.6.7 4.7c0 2-1.3 3.6-3.3 3.6S7.5 7.4 7.5 5.4V5A13 13 0 0 0 4 14a8 8 0 0 0 16 0c0-5.4-2.6-10.2-6.5-13.3zM11.7 19a3 3 0 0 1-3-2.9c0-1.5 1-2.6 2.6-2.9s3.3-1.1 3.8-2.4a8.7 8.7 0 0 1 .9 3.9 4.3 4.3 0 0 1-4.3 4.3z"/></symbol>
+  <symbol id="leaf" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.2 3.8 21.3l1.9.7.9-2.3c.5.2 1 .3 1.4.3C19 20 22 3 22 3c-1 2-8 2.2-13 3.3S2 11.5 2 13.5s1.8 3.8 1.8 3.8C7 8 17 8 17 8z"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><path d="M16 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm-8 0a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13zm8 0h-1a4.2 4.2 0 0 1 2 3.5V19h6v-2.5c0-2.3-4.7-3.5-7-3.5z"/></symbol>
+  <symbol id="bike" viewBox="0 0 24 24"><path d="M5 20.5A3.5 3.5 0 1 1 8.5 17 3.5 3.5 0 0 1 5 20.5zm0-5.5a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm14 5.5a3.5 3.5 0 1 1 3.5-3.5 3.5 3.5 0 0 1-3.5 3.5zm0-5.5a2 2 0 1 0 2 2 2 2 0 0 0-2-2zM15.5 5a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 15.5 5zm-1.3 1.5 2.2 3.5H19v2h-3.7l-1.5-2.4-2.1 2.2 2.3 1.7V19h-2v-4.2l-3.3-2.4a1.5 1.5 0 0 1-.2-2.2l3.3-3.4a1.6 1.6 0 0 1 2.4.2z"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="m12 17.3 6.2 3.7-1.6-7L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2 7.4 14l-1.6 7z"/></symbol>
+  <symbol id="fb" viewBox="0 0 24 24"><path d="M14 13.5h2.5l1-4H14v-2c0-1 0-2 2-2h1.5V2.1A28 28 0 0 0 14.6 2C12 2 10 3.7 10 6.7v2.8H7v4h3V22h4z"/></symbol>
+  <symbol id="tt" viewBox="0 0 24 24"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6 2.7 2.7 0 0 1 .8.1V9.7a5.8 5.8 0 1 0 5 5.7V9.1a7.4 7.4 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.3-1.6z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8.2a3.2 3.2 0 1 1 3.2-3.2 3.2 3.2 0 0 1-3.2 3.2zM17.3 5.5a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2zM21.9 7.1a5.8 5.8 0 0 0-1.6-4.1 5.8 5.8 0 0 0-4.1-1.6c-1.6-.1-6.5-.1-8.2 0a5.8 5.8 0 0 0-4.1 1.6A5.8 5.8 0 0 0 2.3 7c-.1 1.6-.1 6.5 0 8.2a5.8 5.8 0 0 0 1.6 4.1 5.8 5.8 0 0 0 4.1 1.6c1.6.1 6.5.1 8.2 0a5.8 5.8 0 0 0 4.1-1.6 5.8 5.8 0 0 0 1.6-4.1c.1-1.7.1-6.5 0-8.1zm-2.1 9.9a3.3 3.3 0 0 1-1.9 1.9c-1.3.5-4.4.4-5.9.4s-4.6.1-5.9-.4A3.3 3.3 0 0 1 4.2 17c-.5-1.3-.4-4.4-.4-5.9s-.1-4.6.4-5.9A3.3 3.3 0 0 1 6.1 3.3c1.3-.5 4.4-.4 5.9-.4s4.6-.1 5.9.4a3.3 3.3 0 0 1 1.9 1.9c.5 1.3.4 4.4.4 5.9s.1 4.6-.4 5.9z"/></symbol>
+</svg>
+
+<div class="demo">Sample website concept prepared for Desi Foods — prices, hours &amp; reviews are placeholders for approval.</div>
+
+<header>
+  <nav class="wrap nav">
+    <a href="#home" class="brand"><img src="images/logo.jpg" alt="Desi Foods logo"><span><b>Desi Foods</b><small>FB AREA · KARACHI</small></span></a>
+    <div class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#specials">Specials</a>
+      <a href="#menu">Menu</a>
+      <a href="#deals">Platters</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+923002926900" class="btn btn-primary"><svg class="i"><use href="#phone"/></svg> 0300-2926900</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="urdu">دیسی فوڈز</span>
+      <h1>Asli Desi Zaiqa,<br><span>Dumba</span> Ki Shaan.</h1>
+      <p class="lead">From slow-cooked Dumba Derhya Pulao to sizzling karahi and full family platters — Desi Foods serves Karachi's most loved desi dishes, made fresh every day in FB Area.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="https://wa.me/923002926900?text=Assalam-o-Alaikum%20Desi%20Foods%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener" class="btn btn-wa"><svg class="i"><use href="#wa"/></svg> Order on WhatsApp</a>
+        <a href="#contact" class="btn btn-ghost">Book a Table</a>
+      </div>
+      <div class="hero-badges">
+        <div><svg class="i"><use href="#fire"/></svg> Fresh dumba daily</div>
+        <div><svg class="i"><use href="#users"/></svg> Platters for up to 12</div>
+        <div><svg class="i"><use href="#bike"/></svg> Home delivery</div>
+      </div>
+    </div>
+    <div class="hero-logo">
+      <img src="images/logo.jpg" alt="Desi Foods — دیسی فوڈز">
+      <div class="tag">Opp. Lucky One Mall</div>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true"><div class="track">
+  <span>🔥 Dumba Platter</span><span>✦ Dumba Derhya Pulao</span><span>🔥 Dumba Karahi</span><span>✦ Batair Platter</span><span>🔥 Dum Pukht</span><span>✦ BBQ Platter</span><span>🔥 Beef Biryani</span><span>✦ Handi</span>
+  <span>🔥 Dumba Platter</span><span>✦ Dumba Derhya Pulao</span><span>🔥 Dumba Karahi</span><span>✦ Batair Platter</span><span>🔥 Dum Pukht</span><span>✦ BBQ Platter</span><span>🔥 Beef Biryani</span><span>✦ Handi</span>
+</div></div>
+
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about-img reveal">
+      <div class="ph" data-label="Our Kitchen"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=70" alt="Desi curry being served" loading="lazy"></div>
+      <div class="ph ph2" data-label="Fresh Naan"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=70" alt="Fresh desi snacks" loading="lazy"></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2>Ghar jaisa khana, dawat jaisi shaan.</h2>
+      <p>Desi Foods started with one simple idea: serve the flavours Karachi grew up with — rich yakhni pulao, desi-ghee karahi and smoky BBQ — without shortcuts. Everything is cooked fresh in our own kitchen at Abdullah Centre, FB Area Block 16.</p>
+      <p>We're best known for our <strong>dumba specialities</strong> — the first in the area to introduce a complete Dumba Platter, Dumba Derhya Pulao made in fresh dumba yakhni, and Dumba Chalkki. Whether it's a quick lunch, a family dinner or a dawat for twelve, we've got a platter for it.</p>
+      <div class="stats">
+        <div class="stat"><b>100%</b><small>Fresh meat daily</small></div>
+        <div class="stat"><b>12</b><small>Persons per mega platter</small></div>
+        <div class="stat"><b>40+</b><small>Desi dishes</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-white" id="specials">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Signature Dishes</span>
+      <h2>Jis ke liye log door door se aate hain</h2>
+      <p>Our house specials — cooked in desi ghee, served hot, and made for sharing.</p>
+    </div>
+    <div class="grid-3" id="specialGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="menu">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Full Menu</span>
+      <h2>Aaj kya khayenge?</h2>
+      <p>Tap <b>+</b> to add items to your order, then send it straight to us on WhatsApp.</p>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div class="menu-list" id="menuList"></div>
+    <p class="note">* Prices are indicative and may change. Please confirm on call/WhatsApp.</p>
+  </div>
+</section>
+
+<section class="section deals" id="deals">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Family &amp; Dawat Platters</span>
+      <h2>Sab mil ke khao, zyada maza aayega</h2>
+      <p>Perfect for families, office lunches and dawats. Pre-order a day in advance for the big ones.</p>
+    </div>
+    <div class="grid-3">
+      <div class="deal reveal">
+        <h3>Family Platter</h3><div class="serves">Serves 4–5</div>
+        <ul><li>Chicken Karahi (half)</li><li>Beef Biryani (2 plates)</li><li>Chicken Tikka ×2</li><li>Raita, salad &amp; 4 naan</li><li>1.5L cold drink</li></ul>
+        <div class="amt">Rs 4,499</div>
+        <button class="btn btn-primary add-deal" data-name="Family Platter" data-price="4499">Add to Order</button>
+      </div>
+      <div class="deal hot reveal">
+        <div class="ribbon">BESTSELLER</div>
+        <h3>Dumba Platter</h3><div class="serves">Serves 6–8</div>
+        <ul><li>Dumba Derhya Pulao</li><li>Dumba Karahi (1 kg)</li><li>Dumba Chalkki</li><li>Dumba Dum Pukht</li><li>Raita, salad, naan &amp; drinks</li></ul>
+        <div class="amt">Rs 11,999</div>
+        <button class="btn add-deal" data-name="Dumba Platter" data-price="11999">Add to Order</button>
+      </div>
+      <div class="deal reveal">
+        <h3>Mega Dawat Platter</h3><div class="serves">Serves 10–12</div>
+        <ul><li>Dumba Pulao (full degh)</li><li>Batair ×12</li><li>BBQ Platter (tikka, kabab, boti)</li><li>Handi &amp; mix salad</li><li>12 naan + dessert</li></ul>
+        <div class="amt">Rs 18,999</div>
+        <button class="btn btn-primary add-deal" data-name="Mega Dawat Platter" data-price="18999">Add to Order</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2>Aankhon se bhi khaiye</h2>
+    </div>
+    <div class="gallery reveal">
+      <div class="ph" data-label="Dumba Pulao"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=70" alt="Pulao" loading="lazy"></div>
+      <div class="ph" data-label="Karahi"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=70" alt="Karahi" loading="lazy"></div>
+      <div class="ph" data-label="BBQ"><img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=70" alt="Tikka" loading="lazy"></div>
+      <div class="ph" data-label="Biryani"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=70" alt="Biryani" loading="lazy"></div>
+      <div class="ph" data-label="Handi"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=70" alt="Handi" loading="lazy"></div>
+      <div class="ph" data-label="Dining Hall"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=70" alt="Dining area" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-white">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Desi Foods</span>
+      <h2>Quality jo har niwala mein mehsoos ho</h2>
+    </div>
+    <div class="why">
+      <div class="reveal"><svg><use href="#fire"/></svg><h3>Fresh Daily</h3><p>Meat bought and cooked the same day — never frozen.</p></div>
+      <div class="reveal"><svg><use href="#leaf"/></svg><h3>Desi Ghee</h3><p>Traditional recipes, pure desi ghee and hand-ground masalay.</p></div>
+      <div class="reveal"><svg><use href="#users"/></svg><h3>Family Seating</h3><p>Clean, comfortable family hall — great for dawats and gatherings.</p></div>
+      <div class="reveal"><svg><use href="#bike"/></svg><h3>Fast Delivery</h3><p>Hot food at your door across FB Area, Gulberg &amp; nearby.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Guest Reviews</span>
+      <h2>Hamare mehmaan kya kehte hain</h2>
+      <!-- SAMPLE reviews for the demo — replace with real Google reviews before going live -->
+    </div>
+    <div class="reviews">
+      <div class="review reveal"><div class="stars">★★★★★</div><p>"Dumba Derhya Pulao was outstanding — soft meat and proper yakhni flavour. The platter was enough for our whole family."</p><div class="who"><span>A</span><div><b>Sample Guest</b><small>Google review · replace</small></div></div></div>
+      <div class="review reveal"><div class="stars">★★★★★</div><p>"Ordered the Dumba Platter for a dawat of 10 people. Everything arrived hot and on time. Will order again."</p><div class="who"><span>S</span><div><b>Sample Guest</b><small>Google review · replace</small></div></div></div>
+      <div class="review reveal"><div class="stars">★★★★☆</div><p>"Karahi and BBQ were very tasty, reasonable prices for the quantity. Great place near Lucky One Mall."</p><div class="who"><span>H</span><div><b>Sample Guest</b><small>Google review · replace</small></div></div></div>
+    </div>
+    <div class="review-cta"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Desi+Foods+Abdullah+Centre+FB+Area+Block+16+Karachi" target="_blank" rel="noopener"><svg class="i"><use href="#star"/></svg> Enjoyed your meal? Review us on Google</a></div>
+  </div>
+</section>
+
+<section class="section bg-white" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Visit / Order</span>
+      <h2>Aaiye, intezar hai</h2>
+    </div>
+    <div class="contact">
+      <div class="info reveal">
+        <h3>Desi Foods <span class="urdu" style="font-size:1.3rem;color:var(--orange-l)">دیسی فوڈز</span></h3>
+        <div class="row"><svg><use href="#pin"/></svg><div><b>Address</b>Apartment Abdullah Centre, Federal B Area Block 16, Gulberg Town, Karachi<br><small>Opposite Lucky One Mall</small></div></div>
+        <div class="row"><svg><use href="#phone"/></svg><div><b>Call / WhatsApp</b><a href="tel:+923002926900">0300-2926900</a><br><a href="tel:+923132260162">0313-2260162</a></div></div>
+        <div class="row"><svg><use href="#clock"/></svg><div style="flex:1"><b>Timings</b>
+          <table class="hours"><tr><td>Mon – Thu</td><td>12:00 PM – 12:00 AM</td></tr><tr><td>Fri</td><td>2:00 PM – 1:00 AM</td></tr><tr><td>Sat – Sun</td><td>12:00 PM – 1:00 AM</td></tr></table>
+        </div></div>
+        <a href="https://wa.me/923002926900?text=Assalam-o-Alaikum%20Desi%20Foods%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener" class="btn btn-wa" style="margin-top:.4rem"><svg class="i"><use href="#wa"/></svg> Chat on WhatsApp</a>
+      </div>
+      <div class="map reveal">
+        <iframe title="Desi Foods location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Lucky%20One%20Mall%20Karachi&z=16&output=embed"></iframe>
+      </div>
+    </div>
+
+    <form class="book reveal" id="book">
+      <h3>Reserve a table / pre-order a platter</h3>
+      <label>Name<input name="name" required placeholder="Your name"></label>
+      <label>Guests<select name="guests"><option>2</option><option>4</option><option selected>6</option><option>8</option><option>10</option><option>12+</option></select></label>
+      <label>Date &amp; time<input name="when" type="datetime-local" required></label>
+      <button class="btn btn-primary" type="submit"><svg class="i"><use href="#wa"/></svg> Send Booking</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a href="#home" class="brand" style="margin-bottom:.8rem"><img src="images/logo.jpg" alt=""><span><b>Desi Foods</b><small>دیسی فوڈز</small></span></a>
+      <p>Karachi's home of dumba specialities, karahi, BBQ and family platters. Asli desi zaiqa — har roz, taaza.</p>
+      <div class="social">
+        <a href="https://www.facebook.com/DesiFoodd/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#fb"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg><use href="#ig"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg><use href="#tt"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#specials">Signature Dishes</a><a href="#menu">Full Menu</a><a href="#deals">Platters</a><a href="#reviews">Reviews</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+923002926900">0300-2926900</a><a href="tel:+923132260162">0313-2260162</a>
+      <a href="#contact">Abdullah Centre, FB Area Block 16, Karachi</a>
+    </div>
+  </div>
+  <div class="wrap copy">© <span id="yr"></span> Desi Foods, Karachi. All rights reserved.</div>
+</footer>
+
+<button class="fab" id="fab"><svg class="i"><use href="#wa"/></svg><span class="lbl">Your Order</span><span class="count" id="count">0</span></button>
+<div class="drawer" id="drawer">
+  <div class="shade" data-close></div>
+  <div class="panel">
+    <h3>Your Order <button class="x" data-close aria-label="Close">×</button></h3>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="total"><span>Total</span><span id="total">Rs 0</span></div>
+    <button class="btn btn-wa" id="sendOrder" style="justify-content:center"><svg class="i"><use href="#wa"/></svg> Send order on WhatsApp</button>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const WA = "923002926900";
+const U = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=700&q=70`;
+
+const specials = [
+  {n:"Dumba Derhya Pulao", u:"دنبہ ڈیرھیا پلاؤ", d:"Fragrant rice cooked in fresh dumba yakhni with tender, fall-off-the-bone dumba meat.", p:1450, unit:"/ plate", b:"Signature", img:U("photo-1563379091339-03b21ab4a4f8")},
+  {n:"Dumba Karahi", u:"دنبہ کڑاہی", d:"Fresh dumba cooked in desi ghee with tomatoes, green chillies, ginger and black pepper.", p:3200, unit:"/ kg", b:"Must Try", img:U("photo-1603894584373-5ac82b2ae398")},
+  {n:"Dumba Chalkki", u:"دنبہ چلکی", d:"Crispy, smoky dumba chalkki pieces — a rare Karachi find, served sizzling with chutney.", p:1800, unit:"/ plate", b:"New", img:U("photo-1606491956689-2ea866880c84")},
+  {n:"Dumba Dum Pukht", u:"دم پخت", d:"Slow-cooked on dum for hours with whole spices until the meat melts in your mouth.", p:3500, unit:"/ kg", b:"Chef's Pick", img:U("photo-1545247181-516773cae754")},
+  {n:"Batair Fry", u:"بٹیر", d:"Whole quails marinated in house masala and fried crisp — a desi street favourite.", p:650, unit:"/ piece", b:"Popular", img:U("photo-1598515214211-89d3c73ae83b")},
+  {n:"Beef Derhya Biryani", u:"بیف بریانی", d:"Spicy Karachi-style biryani with beef, aloo and layers of saffron rice.", p:550, unit:"/ plate", b:"Classic", img:U("photo-1589302168068-964664d93dc0")},
+];
+
+const menu = {
+  "Dumba Specials":[["Dumba Derhya Pulao","Full plate, fresh yakhni",1450],["Dumba Karahi (1 kg)","Desi ghee, black pepper",3200],["Dumba Karahi (½ kg)","",1700],["Dumba Chalkki","Crispy smoked pieces",1800],["Dumba Dum Pukht (1 kg)","Slow-cooked",3500],["Dumba Namkeen Gosht","Peshawari style",3000]],
+  "Karahi & Handi":[["Chicken Karahi (full)","",1900],["Chicken Karahi (half)","",1050],["Mutton Karahi (1 kg)","",3400],["Chicken White Handi","Creamy, mild",1300],["Chicken Makhni Handi","",1350],["Daal Mash Fry","Tarka with desi ghee",450]],
+  "Rice":[["Beef Derhya Biryani","Single plate",550],["Chicken Biryani","Single plate",450],["Chicken Pulao","",450],["Prawns Biryani","",950],["Fish Biryani","",850],["Plain Rice","",250]],
+  "BBQ":[["Chicken Tikka (leg/chest)","",450],["Malai Boti (10 pcs)","",850],["Seekh Kabab (4 pcs)","Beef",700],["Reshmi Kabab (4 pcs)","",750],["Batair Fry","Per piece",650],["BBQ Platter","Tikka, kabab, boti, fries",2800]],
+  "Breads & Sides":[["Tandoori Naan","",60],["Roghni Naan","",100],["Garlic Naan","",120],["Raita","",120],["Fresh Salad","",150],["Soft Drink 1.5L","",280]],
+};
+
+const cart = {};
+const $ = s => document.querySelector(s);
+const fmt = n => "Rs " + n.toLocaleString("en-PK");
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function withFallback(root){
+  root.querySelectorAll(".ph img").forEach(img=>{
+    const fail=()=>img.parentElement.classList.add("fail");
+    if(img.complete && img.naturalWidth===0) fail(); else img.addEventListener("error",fail);
+  });
+}
+
+$("#specialGrid").innerHTML = specials.map(s=>`
+  <article class="dish reveal">
+    <div class="ph" data-label="${esc(s.n)}"><span class="badge">${s.b}</span><img src="${s.img}" alt="${esc(s.n)}" loading="lazy"></div>
+    <div class="dish-body">
+      <h3>${s.n}</h3><div class="ur">${s.u}</div>
+      <p>${s.d}</p>
+      <div class="dish-foot"><span class="price">${fmt(s.p)} <small>${s.unit}</small></span>
+      <button class="add" data-name="${esc(s.n)}" data-price="${s.p}">+ Add</button></div>
+    </div>
+  </article>`).join("");
+
+const cats = Object.keys(menu);
+function showCat(c){
+  document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("active",t.dataset.c===c));
+  $("#menuList").innerHTML = menu[c].map(([n,d,p])=>`
+    <div class="mi"><div><h4>${n}</h4>${d?`<p>${d}</p>`:""}</div><span class="dots"></span><span class="p">${fmt(p)}</span>
+    <button class="plus" data-name="${esc(n)}" data-price="${p}" aria-label="Add ${esc(n)}">+</button></div>`).join("");
+}
+$("#tabs").innerHTML = cats.map(c=>`<button class="tab" data-c="${c}">${c}</button>`).join("");
+$("#tabs").addEventListener("click",e=>{ if(e.target.dataset.c) showCat(e.target.dataset.c); });
+showCat(cats[0]);
+
+function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),1800); }
+function renderCart(){
+  const items=Object.entries(cart);
+  const count=items.reduce((a,[,v])=>a+v.q,0), total=items.reduce((a,[,v])=>a+v.q*v.p,0);
+  $("#count").textContent=count; $("#total").textContent=fmt(total);
+  $("#cartItems").innerHTML = items.length ? items.map(([n,v])=>`
+    <div class="ci"><div><b>${esc(n)}</b><br><small>${fmt(v.p)}</small></div>
+    <div class="qty"><button data-dec="${esc(n)}">−</button><span>${v.q}</span><button data-inc="${esc(n)}">+</button></div></div>`).join("")
+    : `<div class="empty">Your order is empty.<br>Add dishes from the menu.</div>`;
+}
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-name][data-price]");
+  if(b){ const n=b.dataset.name; cart[n]=cart[n]||{p:+b.dataset.price,q:0}; cart[n].q++; renderCart(); toast(`${n} added ✓`); }
+  const inc=e.target.closest("[data-inc]"), dec=e.target.closest("[data-dec]");
+  if(inc){ cart[inc.dataset.inc].q++; renderCart(); }
+  if(dec){ const n=dec.dataset.dec; if(--cart[n].q<=0) delete cart[n]; renderCart(); }
+  if(e.target.closest("[data-close]")) $("#drawer").classList.remove("open");
+  if(e.target.closest(".links a")) $("#links").classList.remove("open");
+});
+$("#fab").onclick=()=>$("#drawer").classList.add("open");
+$("#burger").onclick=()=>$("#links").classList.toggle("open");
+$("#sendOrder").onclick=()=>{
+  const items=Object.entries(cart);
+  if(!items.length) return toast("Add something first 🙂");
+  const lines=items.map(([n,v])=>`• ${n} x${v.q} — ${fmt(v.q*v.p)}`).join("\n");
+  const total=items.reduce((a,[,v])=>a+v.q*v.p,0);
+  const msg=`Assalam-o-Alaikum Desi Foods! I'd like to order:\n${lines}\n\nTotal: ${fmt(total)}\nName:\nAddress:`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`,"_blank");
+};
+$("#book").onsubmit=e=>{
+  e.preventDefault(); const f=new FormData(e.target);
+  const when=new Date(f.get("when")).toLocaleString("en-PK",{dateStyle:"medium",timeStyle:"short"});
+  const msg=`Assalam-o-Alaikum! Table booking request:\nName: ${f.get("name")}\nGuests: ${f.get("guests")}\nWhen: ${when}`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`,"_blank");
+};
+
+withFallback(document);
+const io=new IntersectionObserver(es=>es.forEach(x=>{ if(x.isIntersecting){ x.target.classList.add("in"); io.unobserve(x.target);} }),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+$("#yr").textContent=new Date().getFullYear();
+renderCart();
+</script>
+</body>
+</html>
